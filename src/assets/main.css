@@ -1,0 +1,137 @@
+@import './base.css';
+
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+@media (min-width: 1024px) {
+  .side-image {
+    width: 350px;
+    background-image: url('/public/illustration-sign-up-desktop.svg');
+  }
+}
+  body {
+    display: flex;
+    place-items: center;
+    background-color: hsl(234, 29%, 20%);
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 2rem;
+  }
+
+  .main-container {
+    background-color: white;
+    display: flex;
+    padding: 15px;
+    border-radius: 10px;
+  }
+
+  .container-one {
+    padding: 40px;
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: 53px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .key-point {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  input, button {
+    width: 100%;
+    height: 50px;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+
+  .sub-btn {
+    font-weight: 600;
+    border: none !important;
+    box-shadow: 0px 2px 5px grey;
+    color: white;
+    background-image: linear-gradient(to right, hsl(4, 100%, 66%) , hsl(12, 100%, 70%));
+  }
+
+  label {
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .d-flex {
+    display: flex;
+  }
+
+  .mr-5 {
+    margin-right: 5px;
+  }
+
+  .mb-5 {
+    margin-bottom: 5px;
+  }
+
+  .justify-content-between {
+    justify-content: space-between;  
+  }
+/* } */
+
+@media (max-width: 375px) {
+  #app {
+    padding-left: 0px;
+    padding-right: 0px;
+  } 
+
+  .main-container {
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 0px;
+    padding: 0px;
+  }
+
+  .container-one {
+    padding: 20px;
+  }
+
+  .side-image {
+    background-size: cover;
+    height: 283px;
+    background-image: url('/public/illustration-sign-up-mobile.svg');
+  }
+
+  .thank-container {
+    justify-content: center;
+  }
+
+  .thank-container .container-one {
+    height: 555px;
+  }
+
+  .thank-container .sub-btn {
+    margin-top: 130px;
+  }
+}
